@@ -1,15 +1,24 @@
 const isEven = (num) => {
-  // write code for numbers.isEven
-
+  if(num % 1 == 0){
+    return true;
+  }
 }
 
 const sum = (arr) => {
-  // write code for numbers.sum
-
+  return arr.reduce((total, num) => total += num)
 }
 
 const comboSum = (arr, sum) => {
-  // write code for numbers.comboSum
+  for(let i = 0; i <arr.length; i++){
+    for (let j = i+1; j <arr.length; j++){
+      let tempSum = arr[i] + arr[j];
+
+      if(tempSum == sum){
+        return true;
+      }
+    }
+  }
+  return false;
 
 }
 
