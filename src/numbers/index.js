@@ -9,10 +9,11 @@ const sum = (arr) => {
 }
 
 const comboSum = (arr, sum) => {
+  
   for(let i = 0; i <arr.length; i++){
     for (let j = i+1; j <arr.length; j++){
       let tempSum = arr[i] + arr[j];
-
+    
       if(tempSum == sum){
         return true;
       }
