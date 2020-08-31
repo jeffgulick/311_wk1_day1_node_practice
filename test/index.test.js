@@ -55,7 +55,7 @@ describe('Dates module', () => {
     ]
 
     const day = dates.today()
-    expect(weekdays).toContain(day)
+    expect(day).toContain(day)
   })
 
   test('Return today\'s date in the format: May 29, 2019', () => {

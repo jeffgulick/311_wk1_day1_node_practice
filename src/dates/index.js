@@ -1,18 +1,19 @@
-// import moment here; use this package in each function
+let moment = require('moment'); // require
+moment().format(); 
 
 const today = () => {
-  // write code for dates.today
-
+  let currentDay = moment().format('dddd');  
+  return currentDay;
 }
 
 const calendar = () => {
-  // write code for dates.calendar
-
+  let date = moment().format('MMM DD, YYYY');
+  return date;
 }
 
 const currentTime = () => {
-  // write code for dates.currentTime
-
+  let theTime = moment().format('hh:mm:ss A');
+  return theTime;
 }
 
 module.exports = {
